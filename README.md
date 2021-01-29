@@ -2,10 +2,10 @@
 A script to backup a JET profile before the server starts.
 
 # Usage
-Run `StartServer.cmd` instead of the normal server executable.
+Run 'index.exe' instead of the normal server.
 
 # Compile
 
 1. Install NASM x64 for Windows.
 2. `npm install`
-3. `node build.js`
+3. `npx pkg index.js`

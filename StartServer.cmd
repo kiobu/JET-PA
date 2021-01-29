@@ -1,2 +1,0 @@
-JETPA.exe
-Server.exe
