@@ -7,6 +7,8 @@
 
 */
 
+process.stdin.resume();
+
 console.log("\n [ JET Profile Archiver ] by kiobu (https://github.com/kiobu/JET-PA)\n")
 
 let go = () => {
@@ -20,7 +22,7 @@ let go = () => {
 }
 
 const fs = require('fs')
-const ppath = `${__dirname}/user/profiles`
+const ppath = `${process.cwd()}/user/profiles`
 
 // Read user/profiles.
 let dir = undefined;
@@ -51,7 +53,7 @@ let profiles = []
 for (let k in dir) { profiles.push(dir[k]) }
 
 // Set up backup directory.
-const apath = `${__dirname}/__profileBackups`
+const apath = `${process.cwd()}/__profileBackups`
 if (!fs.existsSync(apath)) { fs.mkdirSync(apath) }
 
 const timestamp = ((new Date()).toString()).substr(0, (new Date()).toString().indexOf('(')).split(" ").join("-").split(":").join("_");

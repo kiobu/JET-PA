@@ -8,4 +8,4 @@ Run 'index.exe' instead of the normal server.
 
 1. Install NASM x64 for Windows.
 2. `npm install`
-3. `npx pkg index.js`
+3. `npx pkg index.js --target node12-win-x64`
