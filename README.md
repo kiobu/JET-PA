@@ -2,8 +2,9 @@
 A program to backup a JET profile before the server starts.
 
 # Usage
-Run 'ArchiverServer.exe' instead of the normal server.
+Run 'JET-PA.exe' instead of the normal server.
 
 # Compile
 
-TBD
+1. Install Rust/Cargo with toolchain `x86_64-pc-windows-msvc`.
+2. `cargo build`
